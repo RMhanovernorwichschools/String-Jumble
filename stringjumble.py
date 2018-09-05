@@ -50,9 +50,9 @@ for x in range (0,sl):
 reverse_space_loci=space_loci[len(space_loci):0:-1]
 reverse_space_loci.append(space_loci[0])
 
-fin=len(characters)
+fin=sl
 for x in reverse_space_loci:
-    start=x
+    start=x+1
     for n in range(start,fin):
         print_b=print_b+characters[n]
     fin=x
@@ -61,3 +61,13 @@ for n in range(0,fin+1):
     print_b=print_b+characters[n]
 
 print(print_b)
+
+start=0
+for x in space_loci:
+    fin=x
+    for n in characters[fin:start:-1]:
+        print_c=print_c+n
+    start=x+1
+    print_c=print_c+' '
+print(print_c)
+    
