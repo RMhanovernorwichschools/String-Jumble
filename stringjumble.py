@@ -46,20 +46,13 @@ for x in range (0,sl):
     if characters[x]==' ':
         space_loci.append(x)
 
-all_loci=space_loci
-for x in range (0,sl):
-    if characters[x]=='.' or characters[x]==',' or characters[x]=='?' or characters[x]=='/' or characters[x]==';' or characters[x]==':' or characters[x]==')' or characters[x]=='(':
-        all_loci.append(x)
-all_loci.sort()
-
-reverse_space_loci=all_loci[len(all_loci):0:-1]
-reverse_space_loci.append(all_loci[0])
+reverse_space_loci=all_loci[len(space_loci):0:-1]
+reverse_space_loci.append(space_loci[0])
 
 fin=sl
 for x in reverse_space_loci:
     start=x+1
     for n in range(start,fin):
-        
         print_b=print_b+characters[n]
     fin=x
     print_b=print_b+characters[x]
