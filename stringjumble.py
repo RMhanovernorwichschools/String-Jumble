@@ -56,7 +56,7 @@ for x in reverse_space_loci:
         print_b=print_b+characters[n]
     fin=x
     print_b=print_b+' '
-for n in range(0,fin+1):
+for n in range(0,fin):
     print_b=print_b+characters[n]
 
 print(print_b)
@@ -70,7 +70,7 @@ for x in space_loci:
     start=x+1
     print_c=print_c+' '
 n=0
-while space_loci[-1]+n<sl:
+while space_loci[-1]+n<sl-1:
     print_c=print_c+characters[sl-n-1]
     n+=1
 
