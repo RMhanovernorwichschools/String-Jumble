@@ -46,7 +46,7 @@ for x in range (0,sl):
     if characters[x]==' ':
         space_loci.append(x)
 
-reverse_space_loci=all_loci[len(space_loci):0:-1]
+reverse_space_loci=space_loci[len(space_loci):0:-1]
 reverse_space_loci.append(space_loci[0])
 
 fin=sl
