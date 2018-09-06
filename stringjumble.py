@@ -28,6 +28,8 @@ erehT era a wef seuqinhcet ro skcirt taht uoy yam dnif ydnah
 string=input("Please enter a string of text (the bigger the better): ")
 sl=len(string)
 
+print('You entered "{0}". Now jumble it:'.format(string))
+
 characters=[]
 print_a=''
 print_b=''
