@@ -37,8 +37,7 @@ for x in range(0,sl):
     characters.append(string[x])
     
 for x in range(0,sl):
-    n=sl-(x+1)
-    print_a=print_a+characters[n]
+    print_a=print_a+characters[sl-(x+1)]
     
 print(print_a)
 
@@ -76,4 +75,3 @@ while space_loci[-1]+n<sl:
     n+=1
 
 print(print_c)
-    
