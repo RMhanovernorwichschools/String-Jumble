@@ -64,10 +64,16 @@ print(print_b)
 
 start=0
 for x in space_loci:
-    fin=x
-    for n in characters[fin:start:-1]:
-        print_c=print_c+n
+    n=0
+    while start+n<x:
+        print_c=print_c+characters[x-n-1]
+        n+=1
     start=x+1
     print_c=print_c+' '
+n=0
+while space_loci[-1]+n<sl:
+    print_c=print_c+characters[sl-n-1]
+    n+=1
+
 print(print_c)
     
