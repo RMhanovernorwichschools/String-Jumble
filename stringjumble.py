@@ -48,7 +48,7 @@ for x in range (0,sl):
 
 all_loci=space_loci
 for x in range (0,sl):
-    if characters[x]=='.' or characters[x]==',' or characters[x]=='?' or characters[x]=='/' or characters[x]==';' or characters[x]==':' or characters[x]==') or characters[x]=='(':
+    if characters[x]=='.' or characters[x]==',' or characters[x]=='?' or characters[x]=='/' or characters[x]==';' or characters[x]==':' or characters[x]==')' or characters[x]=='(':
         all_loci.append(x)
 all_loci.sort()
 
@@ -75,7 +75,7 @@ for x in space_loci:
         print_c=print_c+characters[x-n-1]
         n+=1
     start=x+1
-    print_c=print_c+' '
+    print_c=print_c+characters[x]
 n=0
 while space_loci[-1]+n<sl-1:
     print_c=print_c+characters[sl-n-1]
